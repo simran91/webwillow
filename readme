@@ -1,0 +1,47 @@
+###############################################################################
+# WebWillow 								      #
+#									      # 
+###############################################################################
+
+WebWillow is a program that can scoot around a given website like a robot
+looking for files that might match a particular pattern (specified 
+by you) and then outputting its results into a html file based on
+a template. 
+
+If you're a person that checks out particular pages or sections of a website
+on a routine basis (as the website might contain dynamic content) then
+you might find it useful, as you won't have to check out various 
+sections on the various websites you like, WebWillow can go around,
+collect the info, and present it in a summarised format (again, based
+on the template you specify) and then you can see if you really want
+to view the real page and click thru! 
+
+This program had been written just for personal use, but is made public with
+the assumption that others too may find it useful :-) 
+
+If you have any comments/suggessitions, bug fixes/reports :-) 
+mail me at simran@cse.unsw.edu.au
+
+Here is a sample rundown of the files that are included... 
+
+	* readme
+		- This file... 
+
+	* version
+		- The version of this set of files of webwillow
+
+        * webwillow.pl
+                - The actual program
+
+        * webwillow.conf
+                - Sample config file
+
+        * webwillow.tmpl
+                - Sample template fileo
+
+	* webwillow.html
+		- The html file that was procuded using the 
+		  sample config file on 3/Feb/98
+
+
+Have fun :-) 

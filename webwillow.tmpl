@@ -1,0 +1,54 @@
+##############################################################
+# Sample Template File : webwillow.conf 
+#
+##############################################################
+
+# The following variables are available within all of the 
+#     template:
+#		$$TIME : Current Time - eg. Sun Jan 25 23:17:41 1998 
+#
+
+# The following variables are available only within the "<willow>" and
+# "</willow>" tags!
+# 		$$FIRST_FEW_WORDS : The First Few Words of the Document.
+#				    Extracted from within the <body> and
+#				    </body> tags... 
+#		$$URL             : The URL of the document
+#               $$TITLE           : The Title of the document reterived!
+#		                    (Contains URL if document has no title!
+# Everything inside the <willow> and </willow> tags will be itereated over
+# for every matching URI found! 
+#
+# Note: <willow name=confname> 
+#       and
+#       </willow>
+#       tags MUST be on lines by themselves! 
+#       The program complains about it and dies if they are not! 
+#
+     
+
+<title> WebWillow </title>
+
+<center> <h2> AGE Sport </h2> </center>
+
+<willow name=agesport>
+  <li> <a href="$$URL"> $$TITLE </a><br>
+  $$FIRST_FEW_WORDS 
+  <br><br><br>
+</willow>
+
+<hr>
+
+<center> <h2> SMH Sport </h2> </center>
+<willow name=smhsport>
+  <li> <a href="$$URL"> $$TITLE </a> <br>
+#  $$FIRST_FEW_WORDS 
+#  <p>
+  <br>
+</willow>
+
+<center>
+<hr>
+Web extraction started on $$WILLOW_START_TIME and finished on $$TIME 
+<hr>
+</center>
